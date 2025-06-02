@@ -7,8 +7,8 @@ public class Lab03 {
         int hours = start_time / 3600000;
         int remaining_seconds = start_time % 3600000;
         int minutes = remaining_seconds / 60000;
-        int seconds = remaining_seconds % 60000;
-        int milliseconds = seconds % 1000;
+        int seconds = minutes % 60;
+        int milliseconds = start_time % 1000;
 
         System.out.println("Starting time: \t" + start_time);
         System.out.println("Hours: \t\t\t\t\t\t" + hours);
