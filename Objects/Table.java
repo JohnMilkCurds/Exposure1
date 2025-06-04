@@ -49,5 +49,27 @@ public class Table {
 
 
 
+    // Setters/Mutators
+    public void setHeight(double height) {
+        this.height = height;
+    }
+    public void setWidth(double width) {
+        this.width = width;
+    }
+    public void setWeight(double weight) {
+        if(weight<=1000){
+            this.weight = weight;
+        }
+        else{
+            this.weight = 1000;
+        }
+
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public void setLength(double length) {
+        this.length = length;
+    }
 
 }
